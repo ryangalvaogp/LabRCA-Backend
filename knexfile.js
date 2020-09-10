@@ -7,9 +7,8 @@ module.exports = {
     connection: { 
       port: '3306',
       database: 'sql10364911',
-      
       host:'sql10.freemysqlhosting.net',
-      user: 'sql10364911@ec2-52-8-112-233.us-west-1.compute.amazonaws.com',
+      user: 'sql10364911',
       password: 'kNfJ9KuKuk',
     },
     migrations: {
