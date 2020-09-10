@@ -20,11 +20,11 @@ module.exports = {
   staging: {
     client: 'mysql',
     connection: { 
-      port: '3308',
-      database: 'estagio',
-      host:'192.168.11.7',
-      user: 'root',
-      password: '',
+      port: '3306',
+      database: 'sql10364911',
+      host:'sql10.freemysqlhosting.net',
+      user: 'sql10364911',
+      password: 'kNfJ9KuKuk',
     },
     pool: {
       min: 2,
@@ -38,11 +38,11 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: { 
-      port: '3308',
-      database: 'estagio',
-      host:'192.168.11.7',
-      user: 'root',
-      password: '',
+      port: '3306',
+      database: 'sql10364911',
+      host:'sql10.freemysqlhosting.net',
+      user: 'sql10364911',
+      password: 'kNfJ9KuKuk',
     },
     pool: {
       min: 2,
