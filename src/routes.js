@@ -15,6 +15,9 @@ const imgControllers = require ('./controllers/imgControllers');
 const session = require ('./controllers/sessionControllers')
 
 
+
+const test = require('./controllers/test')
+
 routes.post('/img',  multer(multerConfig).single('file'), imgControllers.create)
 
 
@@ -40,6 +43,10 @@ routes.get('/projetos', projetoControllers.index);
 routes.delete('/projetos/:id', projetoControllers.delete)
 
 
+
+//DEPLOY_TEST
+
+routes.get('/', test.index)
 
 module.exports=routes;
 
