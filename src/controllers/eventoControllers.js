@@ -41,12 +41,12 @@ async delete (request, response){
     const  {id}  = request.params;
     const Responsavel=request.headers.authorization;
 
-    const eventos = await connection ('estagio.eventos').where('id', id ).select ('Responsavel_id').first ();
+    const eventos = await connection ('eventos').where('id', id ).select ('Responsavel_id').first ();
 
     if (eventos.Responsavel_id != Responsavel){
         return response.json({error: 'Operacao não foi permitida'});;
     }
-        await connection('estagio.eventos').where('id', id).delete();
+        await connection('eventos').where('id', id).delete();
         return response.status(204).send();
     
   
